@@ -1,7 +1,7 @@
 # emqx-exhook-aspnetcore
  
 This is a EMQX Broker exhook demo server written in dotnet for exhook
-[¶àÓïÑÔµÄ¹³×ÓÀ©Õ¹](https://www.emqx.io/docs/zh/v5/advanced/lang-exhook.html)
+[å¤šè¯­è¨€çš„ é’©å­æ‰©å±•](https://www.emqx.io/docs/zh/v5/advanced/lang-exhook.html)
 
 ## Prerequisites
 
