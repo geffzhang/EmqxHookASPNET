@@ -1,6 +1,7 @@
 # emqx-exhook-aspnetcore
  
 This is a EMQX Broker exhook demo server written in dotnet for exhook
+[多语言的钩子扩展](https://www.emqx.io/docs/zh/v5/advanced/lang-exhook.html)
 
 ## Prerequisites
 
