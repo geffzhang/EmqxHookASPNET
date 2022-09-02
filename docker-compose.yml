@@ -1,0 +1,33 @@
+version: '3.4'
+
+services:
+  emqxhookaspnet:
+    image: ${DOCKER_REGISTRY-}emqxhookaspnet
+    container_name: emqxhookaspnet
+    build:
+      context: .
+      dockerfile: EmqxHookASPNET/Dockerfile
+    networks:
+    - emqx-network
+  
+  emqx:
+    image: emqx/emqx:5.0.6
+    container_name: emqx
+    links:
+      - emqxhookaspnet
+    ports:
+    - "1883:1883"
+    - "8081:8081"
+    - "8083:8083"
+    - "8883:8883"
+    - "8084:8084"
+    - "11883:11883"
+    - "18083:18083"
+    networks:
+      emqx-network:
+        aliases:
+        - node.emqx.io
+
+networks:
+  emqx-network:
+    driver: bridge

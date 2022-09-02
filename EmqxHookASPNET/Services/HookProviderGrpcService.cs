@@ -307,8 +307,8 @@ namespace EmqxHookASPNET.Services
                 new HookSpec() { Name = "client.connack" },
                 new HookSpec() { Name = "client.connected" },
                 new HookSpec() { Name = "client.disconnected" },
-                new HookSpec() { Name = "client.authenticate" },
-                new HookSpec() { Name = "client.authorize" },
+                //new HookSpec() { Name = "client.authenticate" },
+                //new HookSpec() { Name = "client.authorize" },
 
                 new HookSpec() { Name = "client.subscribe" },
                 new HookSpec() { Name = "client.unsubscribe" },

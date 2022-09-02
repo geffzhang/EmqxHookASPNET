@@ -13,3 +13,15 @@ This is a EMQX Broker exhook demo server written in dotnet for exhook
 ```
 dotnet run --project  .\EmqxHookASPNET\EmqxHookASPNET.csproj
 ```
+or visual studio 2022 debug with docker-compose
+- set Built-in Database auth 
+username : mqttx_e163c7ba  password:1234567890
+
+- set ExHook with aspnet
+![exhook](image/setexhook.png)
+
+enable aspnet exhook
+![enablehook](image/enableexhook.png)
+
+aspnet exhook list
+![aspnethooklist](image/aspnethooklist.png)
