@@ -279,6 +279,7 @@ namespace EmqxHookASPNET.Services
         public override Task<EmptySuccess> OnMessageDelivered(MessageDeliveredRequest request, ServerCallContext context)
         {
             _logger.LogInformation($"OnMessageDelivered:{request}");
+            _logger.LogInformation($"payload: {request.Message.Payload.ToStringUtf8()}");
             EmptySuccess reply = new EmptySuccess();
             return Task.FromResult(reply);
         }
