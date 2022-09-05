@@ -25,3 +25,7 @@ enable aspnet exhook
 
 aspnet exhook list
 ![aspnethooklist](image/aspnethooklist.png)
+
+## License
+[MIT](./LICENSE)
+
