@@ -11,7 +11,7 @@ services:
     - emqx-network
   
   emqx:
-    image: emqx/emqx:5.0.6
+    image: emqx/emqx:5.0.7
     container_name: emqx
     links:
       - emqxhookaspnet
