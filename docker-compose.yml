@@ -7,6 +7,9 @@ services:
     build:
       context: .
       dockerfile: EmqxHookASPNET/Dockerfile
+    ports:
+    - "81:81"
+    - "82:82"
     networks:
     - emqx-network
   
